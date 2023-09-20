@@ -1,0 +1,387 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styleacordeon.css">
+    <title>Acordeón</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="left-nav">
+            <div class="logo">
+                <img src="./assets/images/logocf.png" alt="Logo CFCRL" srcset="">
+            </div>
+            <div class="title">
+                <h6> DIRECTORIO</h6>
+                <h6>DE SINDICATOS</h6>
+            </div>
+        </div>
+        <div class="user-content">
+            <div class="username">username</div>
+            <div class="usericon">usericon</div>
+        </div>
+    </nav>
+
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">Sindicato</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Plataforma de Registro</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Plataforma de Legitimación</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container">
+
+                <div class="container-sindicato" id="nav-sindicato">
+
+
+                    <h1 style="text-align:left; font-size: 15px;"><strong>Sindicato</strong> </h1>
+                    <article class="border border-danger caja"></article>
+
+                    <label class="estilolabel" for="text"><strong class="estilolabel">NOMBRE DEL
+                            SINDICATO:</strong></label>
+                    <input class="form-control form-control-sm" type="text" name="nombre del sindicato"
+                        id="nombre del sindicato">
+
+
+                    <label class="estilolabel" for="text"><strong class="estilolabel">NOMBRE DEL SECRETARIO GENERAL
+                            :</strong></label>
+                    <input class="form-control form-control-sm" type="text" name="nombre del sindicato"
+                        id="nombre del sindicato">
+
+
+                    <label class="estilolabel" for="text"><strong class="estilolabel">PROMOVENTE:</strong></label>
+                    <input class="form-control form-control-sm" type="text" name="nombre del sindicato"
+                        id="nombre del sindicato">
+
+
+                    <label class="estilolabel" for="iname"><strong class="estilolabel">¿PERTENECE A UNA
+                            FEDERACIÓN?:</strong></label>
+
+                    <input type="radio" name="si" id="si">
+                    <label for="si"> Si</label>
+
+                    <input type="radio" name="no" id="no">
+                    <label for="no">no</label><br>
+
+                    <label class=estilolabel" for="iname"><strong class="estilolabel">¿PERTENECE A UNA
+                            CONFEDERACIÓN?</strong></label>
+
+                    <input type="radio" name="si" id="si">
+                    <label for="si"> Si</label>
+
+                    <input type="radio" name="no" id="no">
+                    <label for="no">no</label><br>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccionar</option>
+                        <option value="1">Federación 1</option>
+                        <option value="2">Federacion 2</option>
+                        <option value="3">Federacion 3</option>
+                    </select>
+
+                    <label class="estilolabel" for="email"><strong class="estilolabel">CORREO
+                            ELECTRÓNICO:</strong></label>
+                    <input class="form-control form-control-sm" type="email" name="Correo Electrónico"
+                        id="Correo Electrónico">
+
+                    <label class="estilolabel" for="number"><strong class="estilolabel">NÚMERO
+                            TELEFÓNICO:</strong></label>
+                    <input class="form-control form-control-sm" type="number" name="Número Telefónico"
+                        id="Número Telefónico">
+
+
+                </div>
+                <br>
+
+                <div class="container-Domicilio">
+                    <h2 style="text-align:left; font-size: 15px;"><strong>Domicilio</strong></h2>
+                    <article class="border border-danger caja"></article>
+
+                    <div class="d-flex bd-highlight">
+
+                        <div class="p-2 flex-fill bd-highlight"><strong>Código Postal</strong></div>
+                        <label class="estilolabel2" for="number" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="number" name="Código Postal"
+                            id="Código Postal">
+
+                        <div class="p-2 flex-fill bd-highlight"><strong>Estado</strong></div>
+                        <label class="estilolabel2" for="text" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="text" name="Estado" id="Estado">
+
+                        <div class="p-2 flex-fill bd-highlight"><strong>Municipio o Alcaldia</strong></div>
+                        <label class="estilolabel2" for="text" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="text" name="Municipio o Alcaldia"
+                            id="Municipio o Alcaldia">
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-3">
+                        <div class="me-auto p-2 bd-highlight"><strong>Colonia</strong></div>
+                        <label class="estilolabel2" for="text" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="text" name="Colonia" id="Colonia">
+
+                        <div class="p-2 bd-highlight"><strong>calle</strong></div>
+                        <label class="estilolabel2" for="text" class="estilolabel2"></label>
+                        <input class="form-control form-control-lg" type="text" name="Calle" id="Calle">
+
+                    </div><br>
+
+                    <div class="d-flex bd-highlight mb-3">
+
+                        <div class="p-2 bd-highlight"><strong>Número Exterior</strong></div>
+                        <label class="estilolabel2" for="number" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="number" name="Número Exterior"
+                            id="Número Exterior">
+
+                        <div class="p-2 bd-highlight"><strong>Número Interior</strong></div>
+                        <label class="estilolabel2" for="number" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="number" name="Número Interior"
+                            id="Número Interior">
+
+                        <div class="ms-auto p-2 bd-highlight"><strong>Número Telefónico</strong></div>
+                        <label class="estilolabel2" for="number" class="estilolabel2"></label>
+                        <input class="form-control form-control-sm" type="number" name="Número Telefónico"
+                            id="Número Telefónico">
+
+                    </div>
+
+                    <label class="estilolabel2" for="text" class="estilolabel2"><strong>Referencias</strong></label>
+                    <input class="form-control form-control-sm" type="text" name="Referencias" id="Referencias">
+                    <div style="text-align: right;">
+                        <button type="button" class="btn btn-success btn-sm">
+                            AGREGAR DOMICILIO
+                        </button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="container-table">
+                    <table style="width: 100%;">
+                        <tr style="background-color:#13322b;">
+                            <th>#</th>
+                            <th>Domicilio</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div style="text-align: right;">
+                        <div class="row">
+                            <div class="col-12 alignright mt-3">
+                                <button class="btn btn-primary btn-sm" type="button">CANCELAR</button>
+
+                                <button type="button" class="btn btn-success btn-sm">SIGUIENTE</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="container-registro" id="nav-registro">
+
+
+
+                <h1 style="text-align:left; font-size: 15px;"><strong>Plataforma de Registro</strong></h1>
+                <article class="border border-danger caja"></article>
+
+
+
+                <label class="estilolabel" for="text"><strong class="estilolabel">NÚMERO DE
+                        EXPEDIENTE:</strong></label>
+                <input class="form-control form-control-sm" type="text" name="nombre del sindicato"
+                    id="nombre del sindicato">
+
+
+                <label class="estilolabel" for="number"><strong class="estilolabel">FOLIO:</strong></label>
+                <input class="form-control form-control-sm" type="number" name="nombre del sindicato"
+                    id="nombre del sindicato">
+
+                <label class="estilolabel" for="iname"><strong class="estilolabel">TRÁMITE:</strong></label>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected><strong>Seleccionar</strong></option>
+                    <option value="1">ASOCIACIONES</option>
+                    <option value="2">Registro de Asociación</option>
+                    <option value="3">Modificación de datos generales de asociación</option>
+                    <option value="4">Modificación de estatus</option>
+                    <option value="5">Registro de modificación de directiva</option>
+                    <option value="6">Modificación de padrón de miembros</option>
+                    <option value="7">Acta de rendición de cuentas</option>
+                    <option value="8">Registro de federación y confederación</option>
+                    <option value="9">Solicitud de copia certificada</option>
+                    <option value="10"><strong>CONTRATOS</strong></option>
+                    <option value="11">Solicitud de constancia de representatividad</option>
+                    <option value="12">Proceso de aprobación y depósito de contrato colectivo inicial
+                        (convocatoria)</option>
+                    <option value="13">Revisión o terminación de contrato colectivo</option>
+                    <option value="14">Revisión salarial</option>
+                    <option value="15">Revisión de contrato ley</option>
+                    <option value="16">Solicitud de certificado de registro</option>
+                    <option value="17">Registro de Reglamento</option>
+                    <option value="18">Solicitud de copia certificada</option>
+                    <option value="19">Registro o modificación de convenio de administración de contrato ley
+                    </option>
+
+                </select>
+
+                <label class="estilolabel" for="iname"><strong class="estilolabel">RESOLUCIÓN:</strong></label>
+
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>seleccionar</option>
+                    <option value="1">Positiva</option>
+                    <option value="2">Negativa</option>
+                </select>
+
+                <label class="estilolabel" for="iname"><strong class="estilolabel">AUTORIDAD:</strong></label>
+
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>seleccionar</option>
+                    <option value="1">JLCyA</option>
+                    <option value="2">DGRA</option>
+                    <option value="2">CFCRL</option>
+                </select>
+
+                <label class="estilolabel" for="iname"><strong class="estilolabel">FECHA DE
+                        RESOLUCIÓN:</strong></label>
+
+                <!--date-->
+                <input type="date" name="" id=""><br>
+
+                <label class="estilolabel" for="iname"><strong class="estilolabel">OBSERVACIONES:</strong></label>
+                <input class="campo" type="text" name="observaciones">
+                <div style="text-align: right;">
+
+                    <div class="row">
+                        <div class="col-12 alignright mt-3">
+                            <button class="btn btn-primary btn-sm" type="button">CANCELAR</button>
+
+                            <button type="button" class="btn btn-success btn-sm">SIGUIENTE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+            <div class="container-legitimación" id="nav-legitimacion">
+
+
+                <h1 style="text-align:left; font-size: 15px;"><strong>Plataforma Legitimación</strong></h1>
+                <article class="border border-danger caja"></article>
+
+
+                <label class="estilolabel" for="text"><strong class="estilolabel">INGRESA EL NÚMERO DE
+                        CONTRATO:</strong></label>
+                <input class="form-control form-control-sm" type="text" name="número de contrato"
+                    id="número de contrato" />
+
+                <label class="estilolabel" for="iname"><strong class="estilolabel">¿ES
+                        LEGITIMADO?:</strong></label>
+
+                <input type="radio" name="si" id="si">
+                <label for="si"> Si</label>
+
+                <input type="radio" name="no" id="no">
+                <label for="no">no</label><br>
+
+                <div style="text-align: right;">
+                    <div class="col-12 alignright mt-3"></div>
+                    <button type="button" class="btn btn-success btn-sm"> AGREGAR</button>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="class tablalegi">
+
+                <table style="width: 100%;">
+                    <tr style="background-color:#13322b;">
+                        <th>#</th>
+                        <th>NÚMERO DE CONTRATO</th>
+                        <th>LEGITIMADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div style="text-align: right;">
+    
+                    <div class="row">
+                        <div class="col-12 alignright mt-3">
+                            <button class="btn btn-primary btn-sm" type="button">CANCELAR</button>
+    
+                            <button type="button" class="btn btn-success btn-sm">SIGUIENTE</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+
+
+        </div>
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+</body>
