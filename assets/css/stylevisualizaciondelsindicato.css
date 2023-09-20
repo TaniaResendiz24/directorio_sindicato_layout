@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: montserrat;
+    background-color: #f6f6f6;
+}
+
+body {
+    display: block;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    height: 850px;
+    background: #f6f6f6;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #e7f1ff;
+
+}
+
+.accordion-item:first-of-type .accordion-button {
+
+    background-color: #13322B;
+    color: #f6f6f6;
+}
+
+.accordion-button:hover {
+    z-index: 2;
+    background-color: #13322B;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #13322B;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+.btn-primary {
+    color: #6b1831;
+    background-color: transparent;
+    border-color: #6b1831;
+}
+
+.btn.btn-danger {
+    color: #f6f6f6;
+    background-color: #13322B;
+    border-color: #13322B;
+
+}
+
+h5 {
+    color: #6b1831;
+}
+
+.button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 3;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: transparent;
+    border-block-color: blue;
+    border: #13322B;
+}
+
+.form-control {
+
+    color: #212529;
+    background-color: #af9494;
+
+}
