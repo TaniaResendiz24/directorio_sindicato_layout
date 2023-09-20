@@ -1,0 +1,41 @@
+.logo {
+    display: block;
+    margin: 0 color #;
+    background-color: #eaeff3;
+}
+
+.container {
+    display: flex;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6B1831;
+    border-color: #6B1831;
+}
+
+table,
+th,
+td {
+    border: 2px solid#eef2f5;
+    padding: 10px;
+    text-align: left;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    color: #eaeff3;
+}
+.tr.td{
+    background-color: #eaeff3;
+}
+
+
+
+.pagination-sm .page-link {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    color: black;
+}
